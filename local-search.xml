@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>macos下安装PD20Linux虚拟机以及PDTools的坑</title>
+    <link href="/2025/01/29/macos%E4%B8%8B%E5%AE%89%E8%A3%85pd20%E4%BB%A5%E5%8F%8Apdtools%E7%9A%84%E5%9D%91/"/>
+    <url>/2025/01/29/macos%E4%B8%8B%E5%AE%89%E8%A3%85pd20%E4%BB%A5%E5%8F%8Apdtools%E7%9A%84%E5%9D%91/</url>
+    
+    <content type="html"><![CDATA[<h1 id="安装PD20虚拟机的问题"><a href="#安装PD20虚拟机的问题" class="headerlink" title="安装PD20虚拟机的问题"></a>安装PD20虚拟机的问题</h1><h1 id="安装PDTools的问题"><a href="#安装PDTools的问题" class="headerlink" title="安装PDTools的问题"></a>安装PDTools的问题</h1><ul><li>没有.&#x2F;install 权限</li><li>安装失败 缺少安装包</li><li>缺少依赖项</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>issue</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>issue</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>5-longestPalidrome</title>
     <link href="/2025/01/29/5-longestPalidrome/"/>
     <url>/2025/01/29/5-longestPalidrome/</url>
@@ -29,7 +54,7 @@
   
   
   <entry>
-    <title>0.Home-page</title>
+    <title></title>
     <link href="/2025/01/29/0-Home-page/"/>
     <url>/2025/01/29/0-Home-page/</url>
     
@@ -104,7 +129,7 @@
   
   
   <entry>
-    <title>1.twoSum</title>
+    <title></title>
     <link href="/2025/01/28/1-twoSum/"/>
     <url>/2025/01/28/1-twoSum/</url>
     
