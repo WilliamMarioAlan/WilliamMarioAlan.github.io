@@ -4,6 +4,109 @@
   
   
   <entry>
+    <title>markdown语法</title>
+    <link href="/2025/01/30/markdown%E8%AF%AD%E6%B3%95/"/>
+    <url>/2025/01/30/markdown%E8%AF%AD%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<p>Markdown（MD）是一种轻量级的标记语言，常用于编写文档、博客、README 文件等。它的语法简单，易读易写。以下是 Markdown 的基本用法：</p><hr><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a><strong>1. 标题</strong></h2><p>使用 <code>#</code> 号表示标题，<code>#</code> 的个数表示标题的级别（H1~H6）。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-section"># 一级标题</span><br><span class="hljs-section">## 二级标题</span><br><span class="hljs-section">### 三级标题</span><br><span class="hljs-section">#### 四级标题</span><br><span class="hljs-section">##### 五级标题</span><br><span class="hljs-section">###### 六级标题</span><br></code></pre></td></tr></table></figure><hr><h2 id="2-段落与换行"><a href="#2-段落与换行" class="headerlink" title="2. 段落与换行"></a><strong>2. 段落与换行</strong></h2><ul><li>普通文本直接写即可，段落之间要空一行。</li><li>行尾加两个空格可以换行。</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这是一个段落。<br><br>这是另一个段落。  <br>这一行后面有两个空格，所以它会换行。<br></code></pre></td></tr></table></figure><hr><h2 id="3-强调（加粗、斜体、删除线）"><a href="#3-强调（加粗、斜体、删除线）" class="headerlink" title="3. 强调（加粗、斜体、删除线）"></a><strong>3. 强调（加粗、斜体、删除线）</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-emphasis">*斜体*</span> 或 <span class="hljs-emphasis">_斜体_</span>  <br><span class="hljs-strong">**加粗**</span> 或 <span class="hljs-strong">__加粗__</span>  <br><span class="hljs-strong">**<span class="hljs-emphasis">*加粗+斜体*</span>**</span> 或 <span class="hljs-strong">__<span class="hljs-emphasis">_加粗+斜体_</span>__</span>  <br>~~删除线~~<br></code></pre></td></tr></table></figure><hr><h2 id="4-列表"><a href="#4-列表" class="headerlink" title="4. 列表"></a><strong>4. 列表</strong></h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a><strong>无序列表</strong></h3><p>使用 <code>-</code>、<code>+</code> 或 <code>*</code> 号表示无序列表：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> 项目1<br><span class="hljs-bullet">-</span> 项目2<br><span class="hljs-bullet">  -</span> 子项目1<br><span class="hljs-bullet">  -</span> 子项目2<br><span class="hljs-bullet">+</span> 另一种无序列表<br><span class="hljs-bullet">*</span> 也可以用星号<br></code></pre></td></tr></table></figure><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a><strong>有序列表</strong></h3><p>使用数字加 <code>.</code> 表示：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 第一项<br><span class="hljs-bullet">2.</span> 第二项<br><span class="hljs-bullet">   1.</span> 子项1<br><span class="hljs-bullet">   2.</span> 子项2<br></code></pre></td></tr></table></figure><hr><h2 id="5-链接"><a href="#5-链接" class="headerlink" title="5. 链接"></a><strong>5. 链接</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">普通链接</span>](<span class="hljs-link">https://example.com</span>)<br>[<span class="hljs-string">带标题链接</span>](<span class="hljs-link">https://example.com &quot;悬停显示的标题&quot;</span>)<br></code></pre></td></tr></table></figure><hr><h2 id="6-图片"><a href="#6-图片" class="headerlink" title="6. 图片"></a><strong>6. 图片</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">图片描述</span>](<span class="hljs-link">https://example.com/image.jpg</span>)<br></code></pre></td></tr></table></figure><p>如果是本地图片：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">本地图片</span>](<span class="hljs-link">./image.png</span>)<br></code></pre></td></tr></table></figure><hr><h2 id="7-代码"><a href="#7-代码" class="headerlink" title="7. 代码"></a><strong>7. 代码</strong></h2><h3 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a><strong>行内代码</strong></h3><p>使用反引号（<code>`</code>）包裹：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">`console.log(&quot;Hello, Markdown!&quot;)`</span><br></code></pre></td></tr></table></figure><h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a><strong>代码块</strong></h3><p>使用三个反引号（<code>```</code>）包裹，并可指定语言：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">```python</span><br><span class="hljs-code">def hello():</span><br><span class="hljs-code">    print(&quot;Hello, Markdown!&quot;)</span><br></code></pre></td></tr></table></figure><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><br><span class="hljs-meta">---</span><br><span class="hljs-meta"></span><br><span class="hljs-comment">## **8. 引用**</span><br><span class="hljs-string">```markdown</span><br><span class="hljs-string">&gt;</span> <span class="hljs-string">这是一个引用</span><br><span class="hljs-string">&gt;&gt;</span> <span class="hljs-string">这是嵌套引用</span><br></code></pre></td></tr></table></figure><hr><h2 id="9-分割线"><a href="#9-分割线" class="headerlink" title="9. 分割线"></a><strong>9. 分割线</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br><span class="hljs-strong">***</span><br><span class="hljs-strong">__<span class="hljs-emphasis">_</span></span><br></code></pre></td></tr></table></figure><hr><h2 id="10-表格"><a href="#10-表格" class="headerlink" title="10. 表格"></a><strong>10. 表格</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">| 姓名  | 年龄 | 职业 |<br>|------|----|----|<br>| 张三  | 25 | 程序员 |<br>| 李四  | 30 | 设计师 |<br></code></pre></td></tr></table></figure><p>效果：</p><table><thead><tr><th>姓名</th><th>年龄</th><th>职业</th></tr></thead><tbody><tr><td>张三</td><td>25</td><td>程序员</td></tr><tr><td>李四</td><td>30</td><td>设计师</td></tr></tbody></table><hr><h2 id="11-任务列表"><a href="#11-任务列表" class="headerlink" title="11. 任务列表"></a><strong>11. 任务列表</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> [x] 已完成任务<br><span class="hljs-bullet">-</span> [ ] 待办任务<br><span class="hljs-bullet">-</span> [ ] 另一个待办<br></code></pre></td></tr></table></figure><hr><h2 id="12-HTML-语法"><a href="#12-HTML-语法" class="headerlink" title="12. HTML 语法"></a><strong>12. HTML 语法</strong></h2><p>Markdown 也可以直接嵌入 HTML 代码：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: red;&quot;</span>&gt;</span></span>这是红色文本<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br></code></pre></td></tr></table></figure><hr><p>这些是 Markdown 的基本语法，掌握这些就能应对大部分 Markdown 书写需求！ 🚀</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>tutorial</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>NetworkSecurity</title>
+    <link href="/2025/01/30/NetworkSecurity/"/>
+    <url>/2025/01/30/NetworkSecurity/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>计算机网络安全是保障信息系统免受攻击、破坏和未经授权访问的关键领域。其中，<strong>DDoS（分布式拒绝服务）攻击</strong>是最常见的网络攻击方式之一。此外，还有多种网络安全威胁，如<strong>SQL 注入、XSS（跨站脚本攻击）、社会工程学攻击、恶意软件等</strong>。以下是对 DDoS 及其他主要攻击方式的详细介绍。</p></blockquote><hr><h2 id="1-DDoS（分布式拒绝服务）攻击"><a href="#1-DDoS（分布式拒绝服务）攻击" class="headerlink" title="1. DDoS（分布式拒绝服务）攻击"></a><strong>1. DDoS（分布式拒绝服务）攻击</strong></h2><p>DDoS（Distributed Denial of Service）攻击是一种通过大量恶意流量使目标服务器或网络资源瘫痪的攻击方式。</p><h3 id="1-1-DDoS-攻击原理"><a href="#1-1-DDoS-攻击原理" class="headerlink" title="1.1 DDoS 攻击原理"></a><strong>1.1 DDoS 攻击原理</strong></h3><p>DDoS 攻击者通常使用**僵尸网络（Botnet）**控制成千上万的受感染计算机，同时向目标服务器发送大量流量或请求，使其资源耗尽，导致正常用户无法访问。</p><h3 id="1-2-主要-DDoS-攻击类型"><a href="#1-2-主要-DDoS-攻击类型" class="headerlink" title="1.2 主要 DDoS 攻击类型"></a><strong>1.2 主要 DDoS 攻击类型</strong></h3><ul><li><p><strong>流量型攻击（Volume-based Attacks）</strong><br>通过大量数据包或请求耗尽带宽，常见方式包括：</p><ul><li><strong>UDP 洪水（UDP Flood）</strong>：发送大量 UDP 数据包，消耗服务器带宽。</li><li><strong>ICMP 洪水（Ping Flood）</strong>：发送大量 ICMP（如 ping）请求，使服务器超载。</li><li><strong>SYN 洪水（SYN Flood）</strong>：发送大量 TCP SYN 连接请求，占用服务器连接资源。</li></ul></li><li><p><strong>协议型攻击（Protocol Attacks）</strong><br>通过消耗服务器处理能力进行攻击，常见方式包括：</p><ul><li><strong>TCP SYN Flood</strong>：利用 TCP 三次握手机制，使服务器保持半开连接状态。</li><li><strong>Ping of Death</strong>：发送超大 ICMP 数据包导致系统崩溃。</li><li><strong>Smurf 攻击</strong>：伪造 ICMP 请求，放大攻击流量。</li></ul></li><li><p><strong>应用层攻击（Application Layer Attacks）</strong><br>直接攻击 Web 服务器或数据库，导致服务不可用：</p><ul><li><strong>HTTP Flood</strong>：发送大量 HTTP 请求，使服务器处理过载。</li><li><strong>Slowloris 攻击</strong>：建立多个未完成的 HTTP 连接，拖垮服务器。</li></ul></li></ul><h3 id="1-3-DDoS-防御方法"><a href="#1-3-DDoS-防御方法" class="headerlink" title="1.3 DDoS 防御方法"></a><strong>1.3 DDoS 防御方法</strong></h3><ul><li><strong>流量清洗</strong>：使用 CDN 或云防护（如 Cloudflare、AWS Shield）过滤恶意流量。</li><li><strong>限速（Rate Limiting）</strong>：限制单位时间内的连接或请求数。</li><li><strong>黑白名单</strong>：屏蔽可疑 IP，允许可信 IP 访问。</li><li><strong>流量分析</strong>：使用防火墙、IDS&#x2F;IPS 监测异常流量模式。</li><li><strong>负载均衡</strong>：使用多个服务器分散流量，避免单点过载。</li></ul><hr><h2 id="2-其他主要网络安全攻击方式"><a href="#2-其他主要网络安全攻击方式" class="headerlink" title="2. 其他主要网络安全攻击方式"></a><strong>2. 其他主要网络安全攻击方式</strong></h2><p>除了 DDoS，网络安全领域还有许多常见攻击手段，如 SQL 注入、XSS 攻击、恶意软件等。</p><h3 id="2-1-SQL-注入（SQL-Injection）"><a href="#2-1-SQL-注入（SQL-Injection）" class="headerlink" title="2.1 SQL 注入（SQL Injection）"></a><strong>2.1 SQL 注入（SQL Injection）</strong></h3><p><strong>攻击原理</strong>：攻击者在输入字段（如登录框、搜索框）插入恶意 SQL 代码，从而篡改或窃取数据库中的数据。</p><p><strong>示例攻击代码</strong>：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> users <span class="hljs-keyword">WHERE</span> username <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;admin&#x27;</span> <span class="hljs-comment">-- &#x27; AND password = &#x27;password&#x27;;</span><br></code></pre></td></tr></table></figure><p>其中 <code>--</code> 让 SQL 语句后面的内容变成注释，从而绕过身份验证。</p><p><strong>防御措施</strong>：</p><ul><li>使用 <strong>参数化查询</strong> 或 <strong>ORM</strong>（如 Python 的 SQLAlchemy）。</li><li>限制数据库用户权限，避免数据库泄露。</li><li>过滤和验证用户输入，禁止特殊字符（如 <code>&#39;</code>, <code>--</code>, <code>;</code>）。</li></ul><hr><h3 id="2-2-XSS（跨站脚本攻击）"><a href="#2-2-XSS（跨站脚本攻击）" class="headerlink" title="2.2 XSS（跨站脚本攻击）"></a><strong>2.2 XSS（跨站脚本攻击）</strong></h3><p><strong>攻击原理</strong>：攻击者在网页输入框或 URL 参数中插入恶意 JavaScript 代码，使其在受害者浏览器中执行，导致窃取用户信息或 Cookie。</p><p><strong>示例攻击代码</strong>：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"><span class="hljs-title function_">alert</span>(<span class="hljs-string">&#x27;你的账户已被黑客劫持！&#x27;</span>);</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure><p><strong>攻击方式</strong>：</p><ul><li><strong>存储型 XSS</strong>：恶意代码存储在数据库中，影响所有访问该页面的用户。</li><li><strong>反射型 XSS</strong>：恶意代码通过 URL 传递，仅影响特定访问者。</li><li><strong>DOM 型 XSS</strong>：利用 JavaScript 修改页面 DOM 结构，从而执行恶意代码。</li></ul><p><strong>防御措施</strong>：</p><ul><li><strong>输入过滤</strong>：禁止 <code>&lt;script&gt;</code>、<code>onerror=</code> 等关键字。</li><li><strong>内容安全策略（CSP）</strong>：限制可执行的 JavaScript 资源。</li><li><strong>HTTPOnly &amp; Secure Cookie</strong>：防止 JavaScript 窃取 Cookie。</li></ul><hr><h3 id="2-3-CSRF（跨站请求伪造）"><a href="#2-3-CSRF（跨站请求伪造）" class="headerlink" title="2.3 CSRF（跨站请求伪造）"></a><strong>2.3 CSRF（跨站请求伪造）</strong></h3><p><strong>攻击原理</strong>：攻击者伪造合法用户的身份，在不知情的情况下发起恶意请求。</p><p><strong>示例攻击</strong>：<br>如果用户已登录银行网站，攻击者诱导用户点击恶意链接：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://bank.com/transfer?to=attacker&amp;amount=1000&quot;</span> /&gt;</span><br></code></pre></td></tr></table></figure><p>导致用户账户资金被转移。</p><p><strong>防御措施</strong>：</p><ul><li>使用 <strong>CSRF Token</strong> 验证请求合法性。</li><li>限制 HTTP Referer，检测来源是否合法。</li><li>采用 <strong>SameSite Cookie</strong> 机制，防止跨站访问。</li></ul><hr><h3 id="2-4-恶意软件（Malware）"><a href="#2-4-恶意软件（Malware）" class="headerlink" title="2.4 恶意软件（Malware）"></a><strong>2.4 恶意软件（Malware）</strong></h3><p><strong>恶意软件（Malware）</strong> 是专门用于入侵、破坏或窃取信息的软件，主要包括：</p><ul><li><strong>病毒（Virus）</strong>：附加在合法程序上，随运行传播。</li><li><strong>蠕虫（Worm）</strong>：独立传播，不依赖宿主程序，如“震网”病毒。</li><li><strong>木马（Trojan）</strong>：伪装成正常软件，窃取数据或远程控制设备。</li><li><strong>勒索软件（Ransomware）</strong>：加密用户数据，要求支付赎金解锁（如 WannaCry）。</li><li><strong>间谍软件（Spyware）</strong>：悄悄收集用户信息，如键盘记录器。</li></ul><p><strong>防御措施</strong>：</p><ul><li>安装 <strong>防病毒软件</strong> 并定期更新病毒库。</li><li><strong>及时更新系统补丁</strong>，防止漏洞被利用。</li><li><strong>不随意下载不明来源的软件</strong>，避免中招。</li></ul><hr><h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a><strong>3. 总结</strong></h2><table><thead><tr><th>攻击类型</th><th>原理</th><th>主要危害</th><th>防御措施</th></tr></thead><tbody><tr><td><strong>DDoS 攻击</strong></td><td>通过大量流量或请求使服务器宕机</td><td>网站不可用，业务损失</td><td>限流、CDN、流量清洗</td></tr><tr><td><strong>SQL 注入</strong></td><td>通过 SQL 语句篡改数据库</td><td>数据泄露、账户被盗</td><td>参数化查询、输入过滤</td></tr><tr><td><strong>XSS</strong></td><td>插入恶意 JavaScript</td><td>盗取用户信息</td><td>CSP、安全编码</td></tr><tr><td><strong>CSRF</strong></td><td>伪造用户请求</td><td>资金被盗、账户被劫持</td><td>CSRF Token、SameSite Cookie</td></tr><tr><td><strong>恶意软件</strong></td><td>通过病毒、木马等破坏系统</td><td>数据被加密、设备失控</td><td>安装杀毒软件、定期更新</td></tr></tbody></table>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>DataLink</title>
+    <link href="/2025/01/30/DataLink/"/>
+    <url>/2025/01/30/DataLink/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Network</title>
+    <link href="/2025/01/30/Network/"/>
+    <url>/2025/01/30/Network/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Transport</title>
+    <link href="/2025/01/30/Transport/"/>
+    <url>/2025/01/30/Transport/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Appplication</title>
+    <link href="/2025/01/30/Appplication/"/>
+    <url>/2025/01/30/Appplication/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>ComputerScienceNetwork</title>
+    <link href="/2025/01/30/ComputerScienceNetwork/"/>
+    <url>/2025/01/30/ComputerScienceNetwork/</url>
+    
+    <content type="html"><![CDATA[<p>计算机网络通常有两种主要的分层模型：  </p><ol><li><strong>OSI 七层模型</strong>（理论模型，较为标准）  </li><li><strong>TCP&#x2F;IP 四层模型</strong>（实际应用更广）</li></ol><hr><h3 id="1-OSI-七层模型"><a href="#1-OSI-七层模型" class="headerlink" title="1. OSI 七层模型"></a><strong>1. OSI 七层模型</strong></h3><p>OSI（Open Systems Interconnection，开放式系统互连）模型是一个理论参考模型，分为 7 层，每一层都有不同的功能：</p><table><thead><tr><th>层级</th><th>名称</th><th>作用</th></tr></thead><tbody><tr><td><strong>7</strong></td><td><strong>应用层（Application）</strong></td><td>提供应用程序的网络接口，如 HTTP、FTP、SMTP</td></tr><tr><td><strong>6</strong></td><td><strong>表示层（Presentation）</strong></td><td>数据格式转换，加密解密，如 JPEG、SSL</td></tr><tr><td><strong>5</strong></td><td><strong>会话层（Session）</strong></td><td>负责会话管理，如登录控制、会话恢复</td></tr><tr><td><strong>4</strong></td><td><strong>传输层（Transport）</strong></td><td>可靠传输、数据分段，如 TCP、UDP</td></tr><tr><td><strong>3</strong></td><td><strong>网络层（Network）</strong></td><td>负责路由和寻址，如 IP、ICMP</td></tr><tr><td><strong>2</strong></td><td><strong>数据链路层（Data Link）</strong></td><td>负责数据帧传输，如 MAC、PPP</td></tr><tr><td><strong>1</strong></td><td><strong>物理层（Physical）</strong></td><td>负责硬件传输，如光纤、网线、Wi-Fi</td></tr></tbody></table><hr><h3 id="2-TCP-IP-四层模型"><a href="#2-TCP-IP-四层模型" class="headerlink" title="2. TCP&#x2F;IP 四层模型"></a><strong>2. TCP&#x2F;IP 四层模型</strong></h3><p>相比 OSI，TCP&#x2F;IP 模型更贴近实际应用，只有 4 层：</p><table><thead><tr><th>层级</th><th>OSI 对应</th><th>名称</th><th>作用</th></tr></thead><tbody><tr><td><strong>4</strong></td><td>7、6、5</td><td><strong>应用层</strong></td><td>提供应用协议，如 HTTP、DNS</td></tr><tr><td><strong>3</strong></td><td>4</td><td><strong>传输层</strong></td><td>端到端通信，如 TCP、UDP</td></tr><tr><td><strong>2</strong></td><td>3</td><td><strong>网络层</strong></td><td>负责寻址和路由，如 IP、ICMP</td></tr><tr><td><strong>1</strong></td><td>2、1</td><td><strong>链路层</strong></td><td>物理传输，如 Ethernet、Wi-Fi</td></tr></tbody></table><hr><h3 id="简单理解"><a href="#简单理解" class="headerlink" title="简单理解"></a><strong>简单理解</strong></h3><ul><li>OSI 七层模型更细致，但应用较少，主要用于学习和标准化参考。  </li><li>TCP&#x2F;IP 四层模型更实际，是互联网真正使用的模型。  </li><li>传输层的 <strong>TCP（可靠传输）</strong> 和 <strong>UDP（快速但不可靠）</strong> 是核心协议。  </li><li>网络层的 <strong>IP</strong> 负责寻址，<strong>ICMP</strong> 负责网络诊断（如 ping 命令）。</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>network</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>macos下安装PD20Linux虚拟机以及PDTools的坑</title>
     <link href="/2025/01/29/macos%E4%B8%8B%E5%AE%89%E8%A3%85pd20%E4%BB%A5%E5%8F%8Apdtools%E7%9A%84%E5%9D%91/"/>
     <url>/2025/01/29/macos%E4%B8%8B%E5%AE%89%E8%A3%85pd20%E4%BB%A5%E5%8F%8Apdtools%E7%9A%84%E5%9D%91/</url>

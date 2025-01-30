@@ -1,0 +1,749 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
+  <link rel="icon" href="/img/avatar.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="mario">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="计算机网络安全是保障信息系统免受攻击、破坏和未经授权访问的关键领域。其中，DDoS（分布式拒绝服务）攻击是最常见的网络攻击方式之一。此外，还有多种网络安全威胁，如SQL 注入、XSS（跨站脚本攻击）、社会工程学攻击、恶意软件等。以下是对 DDoS 及其他主要攻击方式的详细介绍。   1. DDoS（分布式拒绝服务）攻击DDoS（Distributed Denial of Service）攻击是一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NetworkSecurity">
+<meta property="og:url" content="https://williammarioalan.github.io/2025/01/30/NetworkSecurity/index.html">
+<meta property="og:site_name" content="mario&#39;s blog">
+<meta property="og:description" content="计算机网络安全是保障信息系统免受攻击、破坏和未经授权访问的关键领域。其中，DDoS（分布式拒绝服务）攻击是最常见的网络攻击方式之一。此外，还有多种网络安全威胁，如SQL 注入、XSS（跨站脚本攻击）、社会工程学攻击、恶意软件等。以下是对 DDoS 及其他主要攻击方式的详细介绍。   1. DDoS（分布式拒绝服务）攻击DDoS（Distributed Denial of Service）攻击是一">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-01-30T05:09:33.000Z">
+<meta property="article:modified_time" content="2025-01-30T05:11:54.795Z">
+<meta property="article:author" content="mario">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>NetworkSecurity - mario&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"williammarioalan.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Mario&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="NetworkSecurity"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-01-30 13:09" pubdate>
+          January 30, 2025 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.4k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          12 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">NetworkSecurity</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <blockquote>
+<p>计算机网络安全是保障信息系统免受攻击、破坏和未经授权访问的关键领域。其中，<strong>DDoS（分布式拒绝服务）攻击</strong>是最常见的网络攻击方式之一。此外，还有多种网络安全威胁，如<strong>SQL 注入、XSS（跨站脚本攻击）、社会工程学攻击、恶意软件等</strong>。以下是对 DDoS 及其他主要攻击方式的详细介绍。</p>
+</blockquote>
+<hr>
+<h2 id="1-DDoS（分布式拒绝服务）攻击"><a href="#1-DDoS（分布式拒绝服务）攻击" class="headerlink" title="1. DDoS（分布式拒绝服务）攻击"></a><strong>1. DDoS（分布式拒绝服务）攻击</strong></h2><p>DDoS（Distributed Denial of Service）攻击是一种通过大量恶意流量使目标服务器或网络资源瘫痪的攻击方式。</p>
+<h3 id="1-1-DDoS-攻击原理"><a href="#1-1-DDoS-攻击原理" class="headerlink" title="1.1 DDoS 攻击原理"></a><strong>1.1 DDoS 攻击原理</strong></h3><p>DDoS 攻击者通常使用**僵尸网络（Botnet）**控制成千上万的受感染计算机，同时向目标服务器发送大量流量或请求，使其资源耗尽，导致正常用户无法访问。</p>
+<h3 id="1-2-主要-DDoS-攻击类型"><a href="#1-2-主要-DDoS-攻击类型" class="headerlink" title="1.2 主要 DDoS 攻击类型"></a><strong>1.2 主要 DDoS 攻击类型</strong></h3><ul>
+<li><p><strong>流量型攻击（Volume-based Attacks）</strong><br>通过大量数据包或请求耗尽带宽，常见方式包括：</p>
+<ul>
+<li><strong>UDP 洪水（UDP Flood）</strong>：发送大量 UDP 数据包，消耗服务器带宽。</li>
+<li><strong>ICMP 洪水（Ping Flood）</strong>：发送大量 ICMP（如 ping）请求，使服务器超载。</li>
+<li><strong>SYN 洪水（SYN Flood）</strong>：发送大量 TCP SYN 连接请求，占用服务器连接资源。</li>
+</ul>
+</li>
+<li><p><strong>协议型攻击（Protocol Attacks）</strong><br>通过消耗服务器处理能力进行攻击，常见方式包括：</p>
+<ul>
+<li><strong>TCP SYN Flood</strong>：利用 TCP 三次握手机制，使服务器保持半开连接状态。</li>
+<li><strong>Ping of Death</strong>：发送超大 ICMP 数据包导致系统崩溃。</li>
+<li><strong>Smurf 攻击</strong>：伪造 ICMP 请求，放大攻击流量。</li>
+</ul>
+</li>
+<li><p><strong>应用层攻击（Application Layer Attacks）</strong><br>直接攻击 Web 服务器或数据库，导致服务不可用：</p>
+<ul>
+<li><strong>HTTP Flood</strong>：发送大量 HTTP 请求，使服务器处理过载。</li>
+<li><strong>Slowloris 攻击</strong>：建立多个未完成的 HTTP 连接，拖垮服务器。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-3-DDoS-防御方法"><a href="#1-3-DDoS-防御方法" class="headerlink" title="1.3 DDoS 防御方法"></a><strong>1.3 DDoS 防御方法</strong></h3><ul>
+<li><strong>流量清洗</strong>：使用 CDN 或云防护（如 Cloudflare、AWS Shield）过滤恶意流量。</li>
+<li><strong>限速（Rate Limiting）</strong>：限制单位时间内的连接或请求数。</li>
+<li><strong>黑白名单</strong>：屏蔽可疑 IP，允许可信 IP 访问。</li>
+<li><strong>流量分析</strong>：使用防火墙、IDS&#x2F;IPS 监测异常流量模式。</li>
+<li><strong>负载均衡</strong>：使用多个服务器分散流量，避免单点过载。</li>
+</ul>
+<hr>
+<h2 id="2-其他主要网络安全攻击方式"><a href="#2-其他主要网络安全攻击方式" class="headerlink" title="2. 其他主要网络安全攻击方式"></a><strong>2. 其他主要网络安全攻击方式</strong></h2><p>除了 DDoS，网络安全领域还有许多常见攻击手段，如 SQL 注入、XSS 攻击、恶意软件等。</p>
+<h3 id="2-1-SQL-注入（SQL-Injection）"><a href="#2-1-SQL-注入（SQL-Injection）" class="headerlink" title="2.1 SQL 注入（SQL Injection）"></a><strong>2.1 SQL 注入（SQL Injection）</strong></h3><p><strong>攻击原理</strong>：攻击者在输入字段（如登录框、搜索框）插入恶意 SQL 代码，从而篡改或窃取数据库中的数据。</p>
+<p><strong>示例攻击代码</strong>：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> users <span class="hljs-keyword">WHERE</span> username <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;admin&#x27;</span> <span class="hljs-comment">-- &#x27; AND password = &#x27;password&#x27;;</span><br></code></pre></td></tr></table></figure>
+<p>其中 <code>--</code> 让 SQL 语句后面的内容变成注释，从而绕过身份验证。</p>
+<p><strong>防御措施</strong>：</p>
+<ul>
+<li>使用 <strong>参数化查询</strong> 或 <strong>ORM</strong>（如 Python 的 SQLAlchemy）。</li>
+<li>限制数据库用户权限，避免数据库泄露。</li>
+<li>过滤和验证用户输入，禁止特殊字符（如 <code>&#39;</code>, <code>--</code>, <code>;</code>）。</li>
+</ul>
+<hr>
+<h3 id="2-2-XSS（跨站脚本攻击）"><a href="#2-2-XSS（跨站脚本攻击）" class="headerlink" title="2.2 XSS（跨站脚本攻击）"></a><strong>2.2 XSS（跨站脚本攻击）</strong></h3><p><strong>攻击原理</strong>：攻击者在网页输入框或 URL 参数中插入恶意 JavaScript 代码，使其在受害者浏览器中执行，导致窃取用户信息或 Cookie。</p>
+<p><strong>示例攻击代码</strong>：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"><span class="hljs-title function_">alert</span>(<span class="hljs-string">&#x27;你的账户已被黑客劫持！&#x27;</span>);</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p><strong>攻击方式</strong>：</p>
+<ul>
+<li><strong>存储型 XSS</strong>：恶意代码存储在数据库中，影响所有访问该页面的用户。</li>
+<li><strong>反射型 XSS</strong>：恶意代码通过 URL 传递，仅影响特定访问者。</li>
+<li><strong>DOM 型 XSS</strong>：利用 JavaScript 修改页面 DOM 结构，从而执行恶意代码。</li>
+</ul>
+<p><strong>防御措施</strong>：</p>
+<ul>
+<li><strong>输入过滤</strong>：禁止 <code>&lt;script&gt;</code>、<code>onerror=</code> 等关键字。</li>
+<li><strong>内容安全策略（CSP）</strong>：限制可执行的 JavaScript 资源。</li>
+<li><strong>HTTPOnly &amp; Secure Cookie</strong>：防止 JavaScript 窃取 Cookie。</li>
+</ul>
+<hr>
+<h3 id="2-3-CSRF（跨站请求伪造）"><a href="#2-3-CSRF（跨站请求伪造）" class="headerlink" title="2.3 CSRF（跨站请求伪造）"></a><strong>2.3 CSRF（跨站请求伪造）</strong></h3><p><strong>攻击原理</strong>：攻击者伪造合法用户的身份，在不知情的情况下发起恶意请求。</p>
+<p><strong>示例攻击</strong>：<br>如果用户已登录银行网站，攻击者诱导用户点击恶意链接：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://bank.com/transfer?to=attacker&amp;amount=1000&quot;</span> /&gt;</span><br></code></pre></td></tr></table></figure>
+<p>导致用户账户资金被转移。</p>
+<p><strong>防御措施</strong>：</p>
+<ul>
+<li>使用 <strong>CSRF Token</strong> 验证请求合法性。</li>
+<li>限制 HTTP Referer，检测来源是否合法。</li>
+<li>采用 <strong>SameSite Cookie</strong> 机制，防止跨站访问。</li>
+</ul>
+<hr>
+<h3 id="2-4-恶意软件（Malware）"><a href="#2-4-恶意软件（Malware）" class="headerlink" title="2.4 恶意软件（Malware）"></a><strong>2.4 恶意软件（Malware）</strong></h3><p><strong>恶意软件（Malware）</strong> 是专门用于入侵、破坏或窃取信息的软件，主要包括：</p>
+<ul>
+<li><strong>病毒（Virus）</strong>：附加在合法程序上，随运行传播。</li>
+<li><strong>蠕虫（Worm）</strong>：独立传播，不依赖宿主程序，如“震网”病毒。</li>
+<li><strong>木马（Trojan）</strong>：伪装成正常软件，窃取数据或远程控制设备。</li>
+<li><strong>勒索软件（Ransomware）</strong>：加密用户数据，要求支付赎金解锁（如 WannaCry）。</li>
+<li><strong>间谍软件（Spyware）</strong>：悄悄收集用户信息，如键盘记录器。</li>
+</ul>
+<p><strong>防御措施</strong>：</p>
+<ul>
+<li>安装 <strong>防病毒软件</strong> 并定期更新病毒库。</li>
+<li><strong>及时更新系统补丁</strong>，防止漏洞被利用。</li>
+<li><strong>不随意下载不明来源的软件</strong>，避免中招。</li>
+</ul>
+<hr>
+<h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a><strong>3. 总结</strong></h2><table>
+<thead>
+<tr>
+<th>攻击类型</th>
+<th>原理</th>
+<th>主要危害</th>
+<th>防御措施</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>DDoS 攻击</strong></td>
+<td>通过大量流量或请求使服务器宕机</td>
+<td>网站不可用，业务损失</td>
+<td>限流、CDN、流量清洗</td>
+</tr>
+<tr>
+<td><strong>SQL 注入</strong></td>
+<td>通过 SQL 语句篡改数据库</td>
+<td>数据泄露、账户被盗</td>
+<td>参数化查询、输入过滤</td>
+</tr>
+<tr>
+<td><strong>XSS</strong></td>
+<td>插入恶意 JavaScript</td>
+<td>盗取用户信息</td>
+<td>CSP、安全编码</td>
+</tr>
+<tr>
+<td><strong>CSRF</strong></td>
+<td>伪造用户请求</td>
+<td>资金被盗、账户被劫持</td>
+<td>CSRF Token、SameSite Cookie</td>
+</tr>
+<tr>
+<td><strong>恶意软件</strong></td>
+<td>通过病毒、木马等破坏系统</td>
+<td>数据被加密、设备失控</td>
+<td>安装杀毒软件、定期更新</td>
+</tr>
+</tbody></table>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>NetworkSecurity</div>
+      <div>https://williammarioalan.github.io/2025/01/30/NetworkSecurity/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>mario</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>January 30, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/01/30/markdown%E8%AF%AD%E6%B3%95/" title="markdown语法">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">markdown语法</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/01/30/DataLink/" title="DataLink">
+                        <span class="hidden-mobile">DataLink</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://williammarioalan.github.io/" target="_blank" rel="nofollow noopener"><span>mario</span></a> <i class="iconfont icon-love"></i> <a href="https://williammarioalan.github.io/" target="_blank" rel="nofollow noopener"><span>mario</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
