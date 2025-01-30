@@ -19,21 +19,21 @@
   <meta name="author" content="mario">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Markdown（MD）是一种轻量级的标记语言，常用于编写文档、博客、README 文件等。它的语法简单，易读易写。以下是 Markdown 的基本用法：  1. 标题使用 # 号表示标题，# 的个数表示标题的级别（H1~H6）。 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题   2. 段落与换行 普通文本直接写即可，段落之间要">
+    <meta name="description" content="Introduction I 和 L 都是用来指定搜索路径的选项，但它们的作用完全不同，分别用于 编译阶段 和 链接阶段。   主要区别   选项 用途 作用阶段 搜索内容    -I 指定头文件搜索路径 编译阶段 .h（头文件）   -L 指定库文件搜索路径 链接阶段 .so &#x2F; .a（库）    具体解释1. I（Include Path） 功能：告诉编译器在指定的目录中查找头文件。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown语法">
-<meta property="og:url" content="https://williammarioalan.github.io/2025/01/30/markdown%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:title" content="gcc&#x2F;g++">
+<meta property="og:url" content="https://williammarioalan.github.io/2025/01/30/gcc-g/index.html">
 <meta property="og:site_name" content="mario&#39;s blog">
-<meta property="og:description" content="Markdown（MD）是一种轻量级的标记语言，常用于编写文档、博客、README 文件等。它的语法简单，易读易写。以下是 Markdown 的基本用法：  1. 标题使用 # 号表示标题，# 的个数表示标题的级别（H1~H6）。 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题   2. 段落与换行 普通文本直接写即可，段落之间要">
+<meta property="og:description" content="Introduction I 和 L 都是用来指定搜索路径的选项，但它们的作用完全不同，分别用于 编译阶段 和 链接阶段。   主要区别   选项 用途 作用阶段 搜索内容    -I 指定头文件搜索路径 编译阶段 .h（头文件）   -L 指定库文件搜索路径 链接阶段 .so &#x2F; .a（库）    具体解释1. I（Include Path） 功能：告诉编译器在指定的目录中查找头文件。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-01-30T05:10:37.000Z">
-<meta property="article:modified_time" content="2025-01-30T05:11:04.810Z">
+<meta property="article:published_time" content="2025-01-30T05:27:49.000Z">
+<meta property="article:modified_time" content="2025-01-30T05:28:23.794Z">
 <meta property="article:author" content="mario">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>markdown语法 - mario&#39;s blog</title>
+  <title>gcc/g++ - mario&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="markdown语法"></span>
+            <span id="subtitle" data-typed-text="gcc/g++"></span>
           
         </div>
 
@@ -210,7 +210,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-01-30 13:10" pubdate>
+        <time datetime="2025-01-30 13:27" pubdate>
           January 30, 2025 pm
         </time>
       </span>
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          505 words
+          517 words
         
       </span>
     
@@ -270,85 +270,116 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">markdown语法</h1>
+            <h1 id="seo-header">gcc/g++</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Markdown（MD）是一种轻量级的标记语言，常用于编写文档、博客、README 文件等。它的语法简单，易读易写。以下是 Markdown 的基本用法：</p>
-<hr>
-<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a><strong>1. 标题</strong></h2><p>使用 <code>#</code> 号表示标题，<code>#</code> 的个数表示标题的级别（H1~H6）。</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-section"># 一级标题</span><br><span class="hljs-section">## 二级标题</span><br><span class="hljs-section">### 三级标题</span><br><span class="hljs-section">#### 四级标题</span><br><span class="hljs-section">##### 五级标题</span><br><span class="hljs-section">###### 六级标题</span><br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="2-段落与换行"><a href="#2-段落与换行" class="headerlink" title="2. 段落与换行"></a><strong>2. 段落与换行</strong></h2><ul>
-<li>普通文本直接写即可，段落之间要空一行。</li>
-<li>行尾加两个空格可以换行。</li>
+                <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><ul>
+<li><code>I</code> 和 <code>L</code> 都是用来指定搜索路径的选项，但它们的作用完全不同，分别用于 <strong>编译阶段</strong> 和 <strong>链接阶段</strong>。</li>
 </ul>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这是一个段落。<br><br>这是另一个段落。  <br>这一行后面有两个空格，所以它会换行。<br></code></pre></td></tr></table></figure>
-
 <hr>
-<h2 id="3-强调（加粗、斜体、删除线）"><a href="#3-强调（加粗、斜体、删除线）" class="headerlink" title="3. 强调（加粗、斜体、删除线）"></a><strong>3. 强调（加粗、斜体、删除线）</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-emphasis">*斜体*</span> 或 <span class="hljs-emphasis">_斜体_</span>  <br><span class="hljs-strong">**加粗**</span> 或 <span class="hljs-strong">__加粗__</span>  <br><span class="hljs-strong">**<span class="hljs-emphasis">*加粗+斜体*</span>**</span> 或 <span class="hljs-strong">__<span class="hljs-emphasis">_加粗+斜体_</span>__</span>  <br>~~删除线~~<br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-列表"><a href="#4-列表" class="headerlink" title="4. 列表"></a><strong>4. 列表</strong></h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a><strong>无序列表</strong></h3><p>使用 <code>-</code>、<code>+</code> 或 <code>*</code> 号表示无序列表：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> 项目1<br><span class="hljs-bullet">-</span> 项目2<br><span class="hljs-bullet">  -</span> 子项目1<br><span class="hljs-bullet">  -</span> 子项目2<br><span class="hljs-bullet">+</span> 另一种无序列表<br><span class="hljs-bullet">*</span> 也可以用星号<br></code></pre></td></tr></table></figure>
-
-<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a><strong>有序列表</strong></h3><p>使用数字加 <code>.</code> 表示：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 第一项<br><span class="hljs-bullet">2.</span> 第二项<br><span class="hljs-bullet">   1.</span> 子项1<br><span class="hljs-bullet">   2.</span> 子项2<br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="5-链接"><a href="#5-链接" class="headerlink" title="5. 链接"></a><strong>5. 链接</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">普通链接</span>](<span class="hljs-link">https://example.com</span>)<br>[<span class="hljs-string">带标题链接</span>](<span class="hljs-link">https://example.com &quot;悬停显示的标题&quot;</span>)<br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="6-图片"><a href="#6-图片" class="headerlink" title="6. 图片"></a><strong>6. 图片</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">图片描述</span>](<span class="hljs-link">https://example.com/image.jpg</span>)<br></code></pre></td></tr></table></figure>
-
-<p>如果是本地图片：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">本地图片</span>](<span class="hljs-link">./image.png</span>)<br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="7-代码"><a href="#7-代码" class="headerlink" title="7. 代码"></a><strong>7. 代码</strong></h2><h3 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a><strong>行内代码</strong></h3><p>使用反引号（<code>`</code>）包裹：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">`console.log(&quot;Hello, Markdown!&quot;)`</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a><strong>代码块</strong></h3><p>使用三个反引号（<code>```</code>）包裹，并可指定语言：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">```python</span><br><span class="hljs-code">def hello():</span><br><span class="hljs-code">    print(&quot;Hello, Markdown!&quot;)</span><br></code></pre></td></tr></table></figure>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><br><span class="hljs-meta">---</span><br><span class="hljs-meta"></span><br><span class="hljs-comment">## **8. 引用**</span><br><span class="hljs-string">```markdown</span><br><span class="hljs-string">&gt;</span> <span class="hljs-string">这是一个引用</span><br><span class="hljs-string">&gt;&gt;</span> <span class="hljs-string">这是嵌套引用</span><br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="9-分割线"><a href="#9-分割线" class="headerlink" title="9. 分割线"></a><strong>9. 分割线</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br><span class="hljs-strong">***</span><br><span class="hljs-strong">__<span class="hljs-emphasis">_</span></span><br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="10-表格"><a href="#10-表格" class="headerlink" title="10. 表格"></a><strong>10. 表格</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">| 姓名  | 年龄 | 职业 |<br>|------|----|----|<br>| 张三  | 25 | 程序员 |<br>| 李四  | 30 | 设计师 |<br></code></pre></td></tr></table></figure>
-
-<p>效果：</p>
-<table>
+<h3 id="主要区别"><a href="#主要区别" class="headerlink" title="主要区别"></a><strong>主要区别</strong></h3><table>
 <thead>
 <tr>
-<th>姓名</th>
-<th>年龄</th>
-<th>职业</th>
+<th>选项</th>
+<th>用途</th>
+<th>作用阶段</th>
+<th>搜索内容</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>张三</td>
-<td>25</td>
-<td>程序员</td>
+<td><code>-I</code></td>
+<td>指定头文件搜索路径</td>
+<td>编译阶段</td>
+<td><code>.h</code>（头文件）</td>
 </tr>
 <tr>
-<td>李四</td>
-<td>30</td>
-<td>设计师</td>
+<td><code>-L</code></td>
+<td>指定库文件搜索路径</td>
+<td>链接阶段</td>
+<td><code>.so</code> &#x2F; <code>.a</code>（库）</td>
 </tr>
 </tbody></table>
 <hr>
-<h2 id="11-任务列表"><a href="#11-任务列表" class="headerlink" title="11. 任务列表"></a><strong>11. 任务列表</strong></h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> [x] 已完成任务<br><span class="hljs-bullet">-</span> [ ] 待办任务<br><span class="hljs-bullet">-</span> [ ] 另一个待办<br></code></pre></td></tr></table></figure>
-
+<h3 id="具体解释"><a href="#具体解释" class="headerlink" title="具体解释"></a><strong>具体解释</strong></h3><h3 id="1-I（Include-Path）"><a href="#1-I（Include-Path）" class="headerlink" title="1. I（Include Path）"></a><strong>1. <code>I</code>（Include Path）</strong></h3><ul>
+<li><p><strong>功能</strong>：告诉编译器在指定的目录中查找头文件。</p>
+</li>
+<li><p><strong>使用场景</strong>：</p>
+<ul>
+<li>头文件不在标准目录（如 <code>/usr/include</code>）中时。</li>
+<li>项目中有自定义的 <code>include/</code> 目录。</li>
+</ul>
+</li>
+<li><p><strong>生效阶段</strong>：<strong>编译阶段</strong>，即将源代码（<code>.c</code> &#x2F; <code>.cpp</code>）转换为目标文件（<code>.o</code>）。</p>
+</li>
+<li><p><strong>示例</strong>：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">gcc -Iinclude -c src/main.c -o build/main.o<br><br></code></pre></td></tr></table></figure>
+<ul>
+<li><code>Iinclude</code>：从 <code>include/</code> 目录中查找头文件。</li>
+<li>头文件的查找顺序：<ol>
+<li><code>#include &quot;header.h&quot;</code>：先查找当前目录，再查找 <code>I</code> 指定目录。</li>
+<li><code>#include &lt;header.h&gt;</code>：直接查找标准目录和 <code>I</code> 指定目录。</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
 <hr>
-<h2 id="12-HTML-语法"><a href="#12-HTML-语法" class="headerlink" title="12. HTML 语法"></a><strong>12. HTML 语法</strong></h2><p>Markdown 也可以直接嵌入 HTML 代码：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: red;&quot;</span>&gt;</span></span>这是红色文本<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br></code></pre></td></tr></table></figure>
-
+<h3 id="2-L（Library-Path）"><a href="#2-L（Library-Path）" class="headerlink" title="2. L（Library Path）"></a><strong>2. <code>L</code>（Library Path）</strong></h3><ul>
+<li><p><strong>功能</strong>：告诉链接器在指定的目录中查找库文件（<code>.so</code> 或 <code>.a</code>）。</p>
+</li>
+<li><p><strong>使用场景</strong>：</p>
+<ul>
+<li>链接阶段需要引用非系统目录中的库。</li>
+<li>第三方库安装在自定义目录中。</li>
+</ul>
+</li>
+<li><p><strong>生效阶段</strong>：<strong>链接阶段</strong>，即将目标文件（<code>.o</code>）组合为可执行文件。</p>
+</li>
+<li><p><strong>示例</strong>：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">gcc -Llib -lmylib -o myprogram build/main.o<br><br></code></pre></td></tr></table></figure>
+<ul>
+<li><code>Llib</code>：从 <code>lib/</code> 目录中查找 <code>libmylib.so</code> 或 <code>libmylib.a</code>。</li>
+<li><code>lmylib</code>：指定链接库 <code>libmylib</code>。</li>
+</ul>
+</li>
+</ul>
 <hr>
-<p>这些是 Markdown 的基本语法，掌握这些就能应对大部分 Markdown 书写需求！ 🚀</p>
+<h3 id="配合使用-I-和-L"><a href="#配合使用-I-和-L" class="headerlink" title="配合使用 I 和 L"></a><strong>配合使用 <code>I</code> 和 <code>L</code></strong></h3><p>在实际开发中，<code>-I</code> 和 <code>-L</code> 经常一起使用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">gcc -Iinclude -Llib -lmylib -o myprogram src/main.c<br><br></code></pre></td></tr></table></figure>
+
+<ol>
+<li><strong><code>Iinclude</code></strong>：<ul>
+<li>编译器在 <code>include/</code> 中查找头文件 <code>myheader.h</code>。</li>
+</ul>
+</li>
+<li><strong><code>Llib</code></strong>：<ul>
+<li>链接器在 <code>lib/</code> 中查找库文件 <code>libmylib.so</code> 或 <code>libmylib.a</code>。</li>
+</ul>
+</li>
+<li><strong><code>lmylib</code></strong>：<ul>
+<li>指定链接 <code>libmylib</code>。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3><ol>
+<li><strong><code>I</code> 和 <code>L</code> 的不同点</strong>：<ul>
+<li><strong><code>I</code></strong>：解决的是<strong>头文件</strong>的查找问题，编译阶段生效。</li>
+<li><strong><code>L</code></strong>：解决的是<strong>库文件</strong>的查找问题，链接阶段生效。</li>
+</ul>
+</li>
+<li><strong>配合使用</strong>：<ul>
+<li><code>I</code> 和 <code>L</code> 常搭配使用，因为库的头文件和库文件通常存放在不同的目录下，分别需要两个选项来指定路径。</li>
+</ul>
+</li>
+<li><strong>记忆小技巧</strong>：<ul>
+<li><code>I</code> → Include → 头文件路径。</li>
+<li><code>L</code> → Library → 库文件路径。</li>
+</ul>
+</li>
+</ol>
 
                 
               </div>
@@ -356,27 +387,6 @@
             <hr/>
             <div>
               <div class="post-metas my-3">
-  
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/tutorial/" class="category-chain-item">tutorial</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
   
   
 </div>
@@ -387,8 +397,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>markdown语法</div>
-      <div>https://williammarioalan.github.io/2025/01/30/markdown语法/</div>
+      <div>gcc/g++</div>
+      <div>https://williammarioalan.github.io/2025/01/30/gcc-g/</div>
     </div>
     <div class="license-meta">
       
@@ -432,9 +442,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/30/gcc-g/" title="gcc/g++">
+                      <a href="/2025/01/30/curlAndwget/" title="curlAndwget">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">gcc/g++</span>
+                        <span class="hidden-mobile">curlAndwget</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -442,8 +452,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/01/30/NetworkSecurity/" title="NetworkSecurity">
-                        <span class="hidden-mobile">NetworkSecurity</span>
+                      <a href="/2025/01/30/markdown%E8%AF%AD%E6%B3%95/" title="markdown语法">
+                        <span class="hidden-mobile">markdown语法</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
