@@ -19,21 +19,21 @@
   <meta name="author" content="mario">
   <meta name="keywords" content="">
   
-    <meta name="description" content="wget 和 curl 是两款强大的命令行工具，用于从网络上下载文件或与服务器交互，功能类似但有所侧重。以下是详细介绍：  一、wget1. 概述wget（全称 “World Wide Web Get”）是一个非交互式网络下载工具。它的特点是简单高效，专注于下载文件，特别适合递归下载和处理网络中断后的续传。 2. 主要特性 支持 HTTP、HTTPS 和 FTP 协议。 支持断点续传。 可递归下载">
+    <meta name="description" content="Quick start在 Git 中，“分区”是指代码管理的不同区域，包括工作目录（Working Directory）、暂存区（Stage&#x2F;Index）、以及本地仓库（Local Repository）。理解这些区域是学习和使用 Git 的核心，因为它们定义了代码在版本控制中的流转过程。 下面从概念、作用以及使用方法详细介绍 Git 的分区：  Git 分区概念 工作目录（Workin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="curlAndwget">
-<meta property="og:url" content="https://williammarioalan.github.io/2025/01/30/curlAndwget/index.html">
+<meta property="og:title" content="git">
+<meta property="og:url" content="https://williammarioalan.github.io/2025/01/31/git/index.html">
 <meta property="og:site_name" content="mario&#39;s blog">
-<meta property="og:description" content="wget 和 curl 是两款强大的命令行工具，用于从网络上下载文件或与服务器交互，功能类似但有所侧重。以下是详细介绍：  一、wget1. 概述wget（全称 “World Wide Web Get”）是一个非交互式网络下载工具。它的特点是简单高效，专注于下载文件，特别适合递归下载和处理网络中断后的续传。 2. 主要特性 支持 HTTP、HTTPS 和 FTP 协议。 支持断点续传。 可递归下载">
+<meta property="og:description" content="Quick start在 Git 中，“分区”是指代码管理的不同区域，包括工作目录（Working Directory）、暂存区（Stage&#x2F;Index）、以及本地仓库（Local Repository）。理解这些区域是学习和使用 Git 的核心，因为它们定义了代码在版本控制中的流转过程。 下面从概念、作用以及使用方法详细介绍 Git 的分区：  Git 分区概念 工作目录（Workin">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-01-30T05:29:29.000Z">
-<meta property="article:modified_time" content="2025-01-30T05:31:18.877Z">
+<meta property="article:published_time" content="2025-01-31T10:04:28.000Z">
+<meta property="article:modified_time" content="2025-01-31T10:05:26.494Z">
 <meta property="article:author" content="mario">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>curlAndwget - mario&#39;s blog</title>
+  <title>git - mario&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="curlAndwget"></span>
+            <span id="subtitle" data-typed-text="git"></span>
           
         </div>
 
@@ -210,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-01-30 13:29" pubdate>
-          January 30, 2025 pm
+        <time datetime="2025-01-31 18:04" pubdate>
+          January 31, 2025 pm
         </time>
       </span>
     
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          843 words
+          845 words
         
       </span>
     
@@ -270,104 +270,113 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">curlAndwget</h1>
+            <h1 id="seo-header">git</h1>
             
             
               <div class="markdown-body">
                 
-                <p><strong><code>wget</code> 和 <code>curl</code> 是两款强大的命令行工具，用于从网络上下载文件或与服务器交互，功能类似但有所侧重。以下是详细介绍：</strong></p>
+                <h1 id="Quick-start"><a href="#Quick-start" class="headerlink" title="Quick start"></a>Quick start</h1><p>在 <strong>Git</strong> 中，“分区”是指代码管理的不同区域，包括工作目录（Working Directory）、暂存区（Stage&#x2F;Index）、以及本地仓库（Local Repository）。理解这些区域是学习和使用 Git 的核心，因为它们定义了代码在版本控制中的流转过程。</p>
+<p>下面从概念、作用以及使用方法详细介绍 Git 的分区：</p>
 <hr>
-<h3 id="一、wget"><a href="#一、wget" class="headerlink" title="一、wget"></a>一、<code>wget</code></h3><h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. <strong>概述</strong></h3><p><code>wget</code>（全称 “World Wide Web Get”）是一个非交互式网络下载工具。它的特点是简单高效，专注于下载文件，特别适合递归下载和处理网络中断后的续传。</p>
-<h3 id="2-主要特性"><a href="#2-主要特性" class="headerlink" title="2. 主要特性"></a>2. <strong>主要特性</strong></h3><ul>
-<li>支持 HTTP、HTTPS 和 FTP 协议。</li>
-<li>支持断点续传。</li>
-<li>可递归下载整个网站，甚至可将其保存为本地镜像。</li>
-<li>易于脚本自动化集成。</li>
+<h3 id="Git-分区概念"><a href="#Git-分区概念" class="headerlink" title="Git 分区概念"></a><strong>Git 分区概念</strong></h3><ol>
+<li><strong>工作目录（Working Directory）</strong><ul>
+<li><strong>定义</strong>：工作目录是用户实际操作的文件夹，是存放项目的实际文件的地方。它包含所有的项目文件，包括未被 Git 管理的文件和已经被管理的文件。</li>
+<li><strong>状态</strong>：<ul>
+<li><strong>已跟踪的文件</strong>：文件已经被 Git 记录在库中，可以被版本控制。</li>
+<li><strong>未跟踪的文件</strong>：文件未被 Git 管理，通常是新创建或忽略的文件。</li>
 </ul>
-<h3 id="3-基本用法"><a href="#3-基本用法" class="headerlink" title="3. 基本用法"></a>3. <strong>基本用法</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 下载单个文件</span><br>wget https://example.com/file.zip<br><br><span class="hljs-comment"># 下载并保存到指定文件名</span><br>wget -O custom_name.zip https://example.com/file.zip<br><br><span class="hljs-comment"># 断点续传下载</span><br>wget -c https://example.com/file.zip<br><br><span class="hljs-comment"># 下载整个网站（递归）</span><br>wget -r https://example.com<br><br><span class="hljs-comment"># 设置下载速度限制（以 KB/s 为单位）</span><br>wget --limit-rate=100k https://example.com/file.zip<br><br><span class="hljs-comment"># 指定用户代理（伪装浏览器）</span><br>wget --user-agent=<span class="hljs-string">&quot;Mozilla/5.0&quot;</span> https://example.com/file.zip<br><br><span class="hljs-comment"># 在后台运行并输出到日志文件</span><br>wget -b -o log.txt https://example.com/file.zip<br><br></code></pre></td></tr></table></figure>
-
-<h3 id="4-高级功能"><a href="#4-高级功能" class="headerlink" title="4. 高级功能"></a>4. <strong>高级功能</strong></h3><ul>
-<li><p><strong>镜像网站</strong>:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget --mirror -p --convert-links -P ./local_dir https://example.com<br><br></code></pre></td></tr></table></figure>
 </li>
-<li><p><strong>添加认证信息</strong>:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget --http-user=USERNAME --http-password=PASSWORD https://example.com/secure_file.zip<br><br></code></pre></td></tr></table></figure></li>
+<li><strong>操作</strong>：<ul>
+<li>编辑文件、创建文件或删除文件都发生在工作目录。</li>
 </ul>
+</li>
+</ul>
+</li>
+<li><strong>暂存区（Stage&#x2F;Index）</strong><ul>
+<li><strong>定义</strong>：暂存区是一个中间区域，存储的是即将提交到本地仓库的文件快照。你可以选择性地将修改的文件加入暂存区。</li>
+<li><strong>作用</strong>：<ul>
+<li>准备提交：用户可以选择哪些文件或哪些改动将被提交。</li>
+<li>提供灵活性：允许多次修改后仅提交一部分内容。</li>
+</ul>
+</li>
+<li><strong>操作</strong>：<ul>
+<li><code>git add</code> 命令将文件从工作目录添加到暂存区。</li>
+<li>用户可以反复更新暂存区内容，直到对提交内容满意为止。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>本地仓库（Local Repository）</strong><ul>
+<li><strong>定义</strong>：本地仓库是存储在 <code>.git</code> 文件夹中的区域，用于保存所有提交的历史记录和对象。</li>
+<li><strong>作用</strong>：<ul>
+<li>提供完整的项目历史：包括所有提交的记录。</li>
+<li>版本控制：可以对代码进行版本切换、回滚等操作。</li>
+</ul>
+</li>
+<li><strong>操作</strong>：<ul>
+<li><code>git commit</code> 将暂存区的内容提交到本地仓库。</li>
+<li>用户可以查看提交记录（<code>git log</code>）并在不同版本间切换（<code>git checkout</code>）。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>远程仓库（Remote Repository）</strong><ul>
+<li><strong>定义</strong>：远程仓库是托管在服务器上的仓库，用于多人协作。</li>
+<li><strong>作用</strong>：<ul>
+<li>用于团队合作时的版本共享。</li>
+<li>实现备份功能。</li>
+</ul>
+</li>
+<li><strong>操作</strong>：<ul>
+<li>使用 <code>git push</code> 上传本地仓库内容到远程仓库。</li>
+<li>使用 <code>git pull</code> 从远程仓库拉取最新代码。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 <hr>
-<h3 id="二、curl"><a href="#二、curl" class="headerlink" title="二、curl"></a>二、<code>curl</code></h3><h3 id="1-概述-1"><a href="#1-概述-1" class="headerlink" title="1. 概述"></a>1. <strong>概述</strong></h3><p><code>curl</code>（全称 “Client URL”）是一个更为通用的命令行工具，可以用于与服务器交互，包括文件下载、上传、发送请求、查看响应头等。</p>
-<h3 id="2-主要特性-1"><a href="#2-主要特性-1" class="headerlink" title="2. 主要特性"></a>2. <strong>主要特性</strong></h3><ul>
-<li>支持大量协议（HTTP、HTTPS、FTP、SFTP、SMTP 等）。</li>
-<li>可以自定义 HTTP 请求头。</li>
-<li>支持 POST、PUT、DELETE 等各种 HTTP 方法。</li>
-<li>更适合用于复杂的 API 调试和开发场景。</li>
+<h3 id="分区之间的流转"><a href="#分区之间的流转" class="headerlink" title="分区之间的流转"></a><strong>分区之间的流转</strong></h3><p>Git 的工作流可以简化为以下步骤：</p>
+<ol>
+<li><strong>工作目录 → 暂存区</strong>：<ul>
+<li>修改工作目录中的文件后，使用 <code>git add &lt;file&gt;</code> 将文件的快照加入暂存区。</li>
 </ul>
-<h3 id="3-基本用法-1"><a href="#3-基本用法-1" class="headerlink" title="3. 基本用法"></a>3. <strong>基本用法</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 下载文件</span><br>curl -O https://example.com/file.zip<br><br><span class="hljs-comment"># 下载并保存为指定文件名</span><br>curl -o custom_name.zip https://example.com/file.zip<br><br><span class="hljs-comment"># 显示 HTTP 响应头</span><br>curl -I https://example.com<br><br><span class="hljs-comment"># 使用 POST 方法提交表单数据</span><br>curl -X POST -d <span class="hljs-string">&quot;key1=value1&amp;key2=value2&quot;</span> https://example.com/form<br><br><span class="hljs-comment"># 下载时显示进度条</span><br>curl -# -O https://example.com/file.zip<br><br><span class="hljs-comment"># 指定用户代理</span><br>curl -A <span class="hljs-string">&quot;Mozilla/5.0&quot;</span> https://example.com<br><br><span class="hljs-comment"># 添加认证信息</span><br>curl -u USERNAME:PASSWORD https://example.com/secure_file.zip<br><br></code></pre></td></tr></table></figure>
-
-<h3 id="4-高级功能-1"><a href="#4-高级功能-1" class="headerlink" title="4. 高级功能"></a>4. <strong>高级功能</strong></h3><ul>
-<li><p><strong>模拟 API 调用</strong>:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -X POST -H <span class="hljs-string">&quot;Content-Type: application/json&quot;</span> -d <span class="hljs-string">&#x27;&#123;&quot;key&quot;:&quot;value&quot;&#125;&#x27;</span> https://api.example.com/endpoint<br><br></code></pre></td></tr></table></figure>
 </li>
-<li><p><strong>断点续传</strong>:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -C - -O https://example.com/file.zip<br><br></code></pre></td></tr></table></figure>
-</li>
-<li><p><strong>上传文件</strong>:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -F <span class="hljs-string">&quot;file=@local_file.txt&quot;</span> https://example.com/upload<br><br></code></pre></td></tr></table></figure>
-</li>
-<li><p><strong>保存 HTTP 响应头和内容</strong>:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -D headers.txt -o content.html https://example.com<br><br></code></pre></td></tr></table></figure></li>
+<li><strong>暂存区 → 本地仓库</strong>：<ul>
+<li>使用 <code>git commit -m &quot;message&quot;</code> 提交暂存区内容到本地仓库，创建一个新的版本。</li>
 </ul>
+</li>
+<li><strong>本地仓库 → 远程仓库</strong>：<ul>
+<li>使用 <code>git push origin &lt;branch&gt;</code> 将本地仓库的更改推送到远程仓库。</li>
+</ul>
+</li>
+<li><strong>远程仓库 → 本地仓库&#x2F;工作目录</strong>：<ul>
+<li>使用 <code>git pull</code> 或 <code>git fetch</code> 拉取远程仓库的更新到本地。</li>
+</ul>
+</li>
+</ol>
 <hr>
-<h3 id="三、wget-和-curl-的比较"><a href="#三、wget-和-curl-的比较" class="headerlink" title="三、wget 和 curl 的比较"></a>三、<code>wget</code> 和 <code>curl</code> 的比较</h3><table>
-<thead>
-<tr>
-<th>特性</th>
-<th><code>wget</code></th>
-<th><code>curl</code></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>目标用途</strong></td>
-<td>文件下载（支持断点续传）</td>
-<td>文件下载、API 调试和开发</td>
-</tr>
-<tr>
-<td><strong>协议支持</strong></td>
-<td>HTTP&#x2F;HTTPS&#x2F;FTP</td>
-<td>多种协议（HTTP&#x2F;HTTPS&#x2F;FTP&#x2F;SFTP）</td>
-</tr>
-<tr>
-<td><strong>递归下载</strong></td>
-<td>支持</td>
-<td>不支持</td>
-</tr>
-<tr>
-<td><strong>断点续传</strong></td>
-<td>支持（简单易用）</td>
-<td>支持（需加参数）</td>
-</tr>
-<tr>
-<td><strong>HTTP 请求定制</strong></td>
-<td>基本支持</td>
-<td>高度灵活</td>
-</tr>
-<tr>
-<td><strong>命令复杂性</strong></td>
-<td>简单直观</td>
-<td>灵活但相对复杂</td>
-</tr>
-<tr>
-<td><strong>默认安装情况</strong></td>
-<td>大多数 Linux 发行版默认安装</td>
-<td>部分系统需要手动安装</td>
-</tr>
-</tbody></table>
-<hr>
-<h3 id="四、应用场景总结"><a href="#四、应用场景总结" class="headerlink" title="四、应用场景总结"></a>四、应用场景总结</h3><ul>
-<li><strong>文件下载</strong>：优先使用 <code>wget</code>，特别是大文件或需要递归下载的场景。</li>
-<li><strong>API 调试和开发</strong>：优先使用 <code>curl</code>，因为它可以灵活构造 HTTP 请求并查看响应。</li>
-<li><strong>脚本集成</strong>：视需求而定，<code>curl</code> 在更复杂场景中通常表现更强大。</li>
+<h3 id="Git-分区的状态查询"><a href="#Git-分区的状态查询" class="headerlink" title="Git 分区的状态查询"></a><strong>Git 分区的状态查询</strong></h3><p>Git 提供了多种工具来查看文件在分区之间的状态：</p>
+<ol>
+<li><p><strong>查看文件状态</strong></p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git status<br></code></pre></td></tr></table></figure>
+<ul>
+<li>显示工作目录和暂存区中文件的状态（已跟踪、未跟踪、修改等）。</li>
 </ul>
-<p>需要根据具体场景选择合适的工具，熟练掌握这两者能够极大提高工作效率。</p>
+</li>
+<li><p><strong>查看工作目录和暂存区的差异</strong></p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git diff<br></code></pre></td></tr></table></figure>
+<ul>
+<li>显示工作目录与暂存区之间的差异。</li>
+</ul>
+</li>
+<li><p><strong>查看暂存区和本地仓库的差异</strong></p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git diff --cached<br></code></pre></td></tr></table></figure>
+<ul>
+<li>显示暂存区与上一次提交（本地仓库）的差异。</li>
+</ul>
+</li>
+</ol>
 
                 
               </div>
@@ -406,8 +415,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>curlAndwget</div>
-      <div>https://williammarioalan.github.io/2025/01/30/curlAndwget/</div>
+      <div>git</div>
+      <div>https://williammarioalan.github.io/2025/01/31/git/</div>
     </div>
     <div class="license-meta">
       
@@ -419,7 +428,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>January 30, 2025</div>
+          <div>January 31, 2025</div>
         </div>
       
       
@@ -451,18 +460,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/31/git/" title="git">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">git</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/01/30/gcc-g/" title="gcc/g++">
-                        <span class="hidden-mobile">gcc/g++</span>
+                      <a href="/2025/01/30/curlAndwget/" title="curlAndwget">
+                        <span class="hidden-mobile">curlAndwget</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
